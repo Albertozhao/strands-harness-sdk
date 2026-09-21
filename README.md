@@ -65,7 +65,7 @@ MCP, streaming, multi-agent patterns, and structured output are all built in.
 
 The easiest way to get started is with **[Strands harness](https://strandsagents.com/docs/user-guide/harness/)**, a fully assembled, state-of-the-art agent. A single `create_harness()` (Python) or `createHarness()` (TypeScript) call gives you an optimized agent with benchmarked defaults for the model, tools, memory, sessions, and context management — ready to take from idea to production. Follow the [harness quickstart](https://strandsagents.com/docs/user-guide/harness/quickstart/), or see the [Python Strands harness](harness-py/) and [TypeScript Strands harness](harness-ts/) packages to get started.
 
-**Python** — `pip install strands-harness`:
+### **Python** — `pip install strands-harness`:
 
 ```python
 from strands_harness import create_harness
@@ -74,7 +74,7 @@ agent = create_harness()
 agent("Find the slowest test in this repo and explain why it's slow")
 ```
 
-**TypeScript** — `npm install @strands-agents/harness`:
+### **TypeScript** — `npm install @strands-agents/harness`:
 
 ```typescript
 import { createHarness } from '@strands-agents/harness'
