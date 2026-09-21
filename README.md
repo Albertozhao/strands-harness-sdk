@@ -97,7 +97,7 @@ The [Quickstart Guide](https://strandsagents.com/docs/user-guide/quickstart/over
 
 ## Working with the SDK
 
-The Strands Harness SDK lets you go deeper and control every part of the agent: the loop, tools, model providers, memory, sessions, and hooks. You can dive into the SDK after working with Strands harness or building your own harness from the ground up when the assembled defaults aren't enough.
+The Strands Harness SDK lets you go deeper and control every part of the agent: the loop, tools, model providers, memory, sessions, and hooks. You can dive into the SDK after working with Strands harness or if you prefer building your own harness from the ground up when the assembled defaults aren't enough.
 
 ### Python
 
