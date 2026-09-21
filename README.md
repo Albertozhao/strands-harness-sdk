@@ -65,7 +65,11 @@ MCP, streaming, multi-agent patterns, and structured output are all built in.
 
 The easiest way to get started is with **[Strands harness](https://strandsagents.com/docs/user-guide/harness/)**, a fully assembled, state-of-the-art agent. A single `create_harness()` (Python) or `createHarness()` (TypeScript) call gives you an optimized agent with benchmarked defaults for the model, tools, memory, sessions, and context management — ready to take from idea to production. Follow the [harness quickstart](https://strandsagents.com/docs/user-guide/harness/quickstart/), or see the [Python Strands harness](harness-py/) and [TypeScript Strands harness](harness-ts/) packages to get started.
 
-### **Python** — `pip install strands-harness`:
+### Python
+
+```bash
+pip install strands-harness
+```
 
 ```python
 from strands_harness import create_harness
@@ -74,7 +78,11 @@ agent = create_harness()
 agent("Find the slowest test in this repo and explain why it's slow")
 ```
 
-### **TypeScript** — `npm install @strands-agents/harness`:
+### TypeScript
+
+```bash
+npm install @strands-agents/harness
+```
 
 ```typescript
 import { createHarness } from '@strands-agents/harness'
@@ -83,9 +91,13 @@ const agent = await createHarness()
 await agent.invoke("Find the slowest test in this repo and explain why it's slow")
 ```
 
-That single call is the whole setup — start here to get a production-ready agent, then drop down to the SDKs below when you want to own the agent loop and wire up tools, model providers, and memory yourself. The [harness configuration reference](https://strandsagents.com/docs/user-guide/harness/reference/configuration/) documents every default you can override.
+Start here to get a batteries-included agent, then drop down to the SDKs below when you want to own the agent loop and wire up tools, model providers, and memory yourself. The [harness configuration reference](https://strandsagents.com/docs/user-guide/harness/reference/configuration/) documents every default you can override.
 
-Both SDKs default to the Amazon Bedrock model provider, so you'll need AWS credentials configured and model access enabled for Claude Sonnet. The [Quickstart Guide](https://strandsagents.com/docs/user-guide/quickstart/overview/) covers configuring other providers (Anthropic, OpenAI, Gemini, Ollama, and more).
+The [Quickstart Guide](https://strandsagents.com/docs/user-guide/quickstart/overview/) covers configuring providers (Amazon Bedrock, Anthropic, OpenAI, Gemini, Ollama, and more).
+
+## Working with the SDK
+
+The Strands Harness SDK lets you go deeper and control every part of the agent: the loop, tools, model providers, memory, sessions, and hooks. You can dive into the SDK after working with Strands harness or building your own harness from the ground up when the assembled defaults aren't enough.
 
 ### Python
 
